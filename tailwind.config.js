@@ -8,22 +8,27 @@ module.exports = {
         basic: '#ffffff'
       },
       black: {
-        basic: '#000000'
+        basic: '#000000',
+        emily_main: '#090b0f',
+        emily_pl2: '#120609',
+        emily_pl: '#05070d',
       },
       gray: {
         home_charcoal1: '#161616',
         home_charcoal2: '#0e0e0e',
         see_more: '#9e9e9e',
-        home_tiles: '#333333',
+        home_tiles: '#191919',
         artist: '#999999',
-        control_bg: '#353535',
+        control_bg: '#151515',
+        border: '#1f1f1f',
         controls: '#999999',
         time_vol: '#323232',
         elapsed: '#a9a9a9',
-
+        search_field: '#262626',
       },
       blue: {
         new_blue: '#192055',
+        right_main: '#111821',
         dark_teal: '#274767',
         panel1: '#2b3946',
         panel2: '#242a30',

@@ -1,10 +1,14 @@
 {
   "devDependencies": {
-    "live-server": "^1.2.1"
+    "autoprefixer": "^10.2.6",
+    "live-server": "^1.2.1",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.2"
   },
   "scripts": {
     "serve": "live-server ."
   },
+  "dependencies": {},
   "name": "fy21cy2-sp3-code9-spotify",
   "version": "1.0.0",
   "description": "replica of 3 Spotify pages",

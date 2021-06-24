@@ -7,182 +7,193 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Spotify | Home</title>
     <link rel="stylesheet" href="src/tailwind.css">
+    <link rel="stylesheet" href="src/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <style>
-        * {
-            font-family: "spotify-circular", "Lato", sans-serif;
 
-        }
-
-        .w125 {
-            width: 500px;
-        }
-        .fsm {
-            font-size: medium;
-        }
-    </style>
 </head>
 
 <body >
-    <!-- side menu and main container -->
-    <div class="w-266 h-163">
+    <!-- side menu and main container, approx 1064px wide?-->
 
+    <div class="w-full flex">
         <!-- side menu on left -->
-        <div class="w-48 h-163">
+        <div class="w-1/5 bg-black-basic text-gray-see_more">
             <!-- side menu goes here -->
+            Sample text
+            <div class="w-5 h-5 bg-gradient-to-br from-blue-liked_a to-blue-liked_b"></div>
         </div>
 
-        <!-- upper portion of main container with nav at top -->
-        <div class="block w-218 h-95 bg-gradient-to-b from-blue-dark_teal to-gray-home_charcoal1 px-6 pt-20 pb-8">
+        <div class="w-4/5">
+            
+            <!-- upper portion of main container with nav -->
+            <div class="block w-full h-80 bg-gradient-to-b from-blue-dark_teal to-gray-home_charcoal1 px-6 pb-8">
+                <!-- top nav -->
+                <div class="w-full py-4 flex justify-between">
+                    <!-- back / fwd -->
+                    <div class="w-20 flex justify-between">
+                        <div class="w-7 h-7 rounded-full pt-px pr-0.5 bg-black-basic text-gray-controls text-center align-middle">
+                            <i class="fa fa-angle-left" style="font-size: 24px"></i>
+                        </div>
+                        <div class="w-7 h-7 rounded-full mr-2 pt-px pl-0.5 bg-black-emily_main text-gray-controls text-center align-middle">
+                            <i class="fa fa-angle-right" style="font-size: 24px"></i>
+                        </div>
+                    </div>
+                    <!-- Emily -->
+                    <div class="emily w-36 rounded-full pl-1 pr-2 bg-black-basic custom-shadow text-white-basic flex justify-between items-center">
+                        <div class="flex items-center">
+                            <img class="rounded-full" src="images/emily.png" alt="emily's avatar">
+                            <span class="ml-2 text-xs">Emily Adams</span>
+                        </div>
+                        <i class="fa fa-caret-down"></i>
+                    </div>
+                </div>
 
-            <div class="">
-                <!-- top nav goes here-->
+                <h2 class="mt-6 mb-4 text-white-basic text-3xl">Good morning</h2>
+
+                <!-- 3 upper mix panels -->
+                <div class="flex justify-between">
+                    <div class="mix-panel ">
+                        <img class="rounded-l-md" src="images/release-radar.png" width="63px"/>
+                        <div class="rounded-r-md pl-3 flex items-center">
+                            <h5 class="text-blue-mix_title font-bold ">Release Radar</h5>
+                        </div>
+                    </div>
+
+                    <div class="mx-3.5 mix-panel">
+                        <img class="rounded-l-md" src="images/crimetown.png" width="63px"/>
+                        <div class="rounded-r-md flex items-center pl-3">
+                            <h5 class="text-blue-mix_title font-bold">Crimetown</h5>
+                        </div>
+                    </div>
+
+                    <div class="mix-panel">
+                        <img class="rounded-l-md" src="images/discover-weekly.png" width="63px"/>
+                        <div class="rounded-r-md flex items-center pl-3">
+                            <h5 class="text-blue-mix_title font-bold">Discover Weekly</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 lower mix panels -->
+                <div class="mt-3.5 flex justify-between">
+                    <div class="mix-panel">
+                        <img class="rounded-l-md" src="images/daily-mix-1.png" width="63px" height="63px"/>
+                        <div class="rounded-r-md flex items-center pl-3">
+                            <h5 class="text-blue-mix_title font-bold">Daily Mix 1</h5>
+                        </div>
+                    </div>
+
+                    <div class="mx-3.5 mix-panel">
+                        <img class="rounded-l-md" src="images/daily-mix-2.png" width="63px" height="63px"/>
+                        <div class="rounded-r-md flex items-center pl-3">
+                            <h5 class="text-blue-mix_title font-bold">Daily Mix 2</h5>
+                        </div>
+                    </div>
+
+                    <div class="mix-panel">
+                        <img class="rounded-l-md" src="images/farewell.png" width="63px" height="63px"/>
+                        <div class="rounded-r-md flex items-center pl-3">
+                            <h5 class="text-blue-mix_title font-bold">Farewell</h5>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <h2 class="text-white-basic text-3xl font-medium">Good morning</h2>
 
-            <!-- 6 mix panels -->
-            <div class="pt-3 grid grid-cols-3 gap-x-4 gap-y-3">
-                <div class="w-64 h-17 rounded-md mr-4 bg-blue-panel1 flex ">
-                    <img class="rounded-l-md" src="images/release-radar.png" width="63px"/>
-                    <div class="rounded-r-md pl-3 flex items-center">
-                        <span class="text-blue-mix_title text-md font-bold ">Release Radar</span>
+            <!-- lower portion of main container -->
+            <div class="w-full bg-gray-home_charcoal2 px-6 pb-5">
+                <div class="pb-3 flex justify-between">
+                    <h3 class="text-2xl text-white-basic">Your heavy rotation</h3>
+                    <div class="flex flex-col justify-end">
+                        <h5 class="text-gray-see_more text-xs tracking-widest">SEE MORE</h5>
                     </div>
                 </div>
-
-                <div class="w-64 h-17 rounded-md mr-4 bg-blue-panel1 flex">
-                    <img class="rounded-l-md" src="images/crimetown.png" width="63px"/>
-                    <div class="rounded-r-md flex items-center pl-3">
-                        <span class="text-blue-mix_title text-md font-bold">Crimetown</span>
+                <!-- 5 album panels -->
+                <div class="flex justify-between text-white-basic">
+                    <!-- panel 1 -->
+                    <div class="album-panel mr-1.5">
+                        <div class="w-32 h-32 hover:scale-110">
+                            <img src="images/be-happy.png" width="127px" alt="album art"/>
+                        </div>
+                        <div class="w-32 flex flex-col align-bottom">
+                            <h5>Be Happy</h5>
+                            <span class="pt-1.5 text-gray-artist text-xs">Gene Evaro Jr.</span>
+                        </div>
                     </div>
-                </div>
-
-                <div class="w-64 h-17 mr-4 bg-blue-panel1 flex rounded-md">
-                    <img class="rounded-l-md" src="images/discover-weekly.png" width="63px"/>
-                    <div class="rounded-r-md flex items-center pl-3">
-                        <span class="text-blue-mix_title text-md font-bold">Discover Weekly</span>
+                    <!-- etc. -->
+                    <div class="album-panel mr-1.5">
+                        <div class="w-32 h-32">
+                            <img src="images/some-days.png" width="127px" alt="album art"/>
+                        </div>
+                        <div class="w-32 flex flex-col align-bottom">
+                            <h5>Some Days</h5>
+                            <span class="pt-1.5 text-gray-artist text-xs">Ira Wolf</span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="w-64 h-17 rounded-md mr-4 bg-blue-panel2 flex">
-                    <img class="rounded-l-md" src="images/daily-mix-1.png" width="63px" height="63px"/>
-                    <div class="rounded-r-md flex items-center pl-3">
-                        <span class="text-blue-mix_title text-md font-bold">Daily Mix 1</span>
+                    <div class="album-panel mr-1.5">
+                        <div class="w-32 h-32">
+                            <img src="images/chime.png" width="127px" alt="album art"/>
+                        </div>
+                        <div class="w-32 flex flex-col align-bottom">
+                            <h5>Chime</h5>
+                            <span class="pt-1.5 text-gray-artist text-xs">Alan Gogoll</span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="w-64 h-17 rounded-md mr-4 bg-blue-panel2 flex">
-                    <img class="rounded-l-md" src="images/daily-mix-2.png" width="63px" height="63px"/>
-                    <div class="rounded-r-md flex items-center pl-3">
-                        <span class="text-blue-mix_title text-md font-bold">Daily Mix 2</span>
+                    <div class="album-panel mr-1.5">
+                        <div class="w-32 h-32">
+                            <img src="images/runaway.png" width="127px" height="127px" alt="album art"/>
+                        </div>
+                        <div class="w-32 flex flex-col align-bottom">
+                            <h5>Runaway</h5>
+                            <span class="pt-1.5 text-gray-artist text-xs">Beast Coast</span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="w-64 h-17 rounded-md mr-4 bg-blue-panel2 flex">
-                    <img class="rounded-l-md" src="images/farewell.png" width="63px" height="63px"/>
-                    <div class="rounded-r-md bg-  flex items-center pl-3">
-                        <span class="text-blue-mix_title text-md font-bold">Farewell</span>
+                    <div class="album-panel">
+                        <div class="w-32 h-32">
+                            <img src="images/in-your-car.png" width="127px" height="127px" alt="album art"/>
+                        </div>
+                        <div class="w-32 flex flex-col align-bottom">
+                            <h5>In Your Car</h5>
+                            <span class="pt-1.5 text-gray-artist text-xs">No Aloha</span>
+                        </div>
                     </div>
-                </div>
 
+
+                </div>
 
             </div>
+
         </div>
-
-        <!-- lower portion of main container -->
-        <div class="w-full bg-gray-home_charcoal2 px-6 pb-4">
-            <div class="pb-3 flex justify-between">
-                <h3 class="text-2xl text-white-basic">Your heavy rotation</h3>
-                <div class="flex flex-col justify-end">
-                    <h5 class="text-gray-see_more text-xs">S E E &nbsp; M O R E</h5>
-                </div>
-            </div>
-            <!-- 5 album panels -->
-            <div class="flex justify-around text-white-basic">
-                <!-- panel 1 -->
-                <div class="w-36 h-52 bg-gray-home_tiles flex flex-col justify-around items-center">
-                    <div class="w-32 h-32">
-                        <img src="images/be-happy.png" width="127px"/>   
-                    </div>
-                    <div class="w-32 flex flex-col align-bottom">
-                        <h5>Be Happy</h5>
-                        <span class="text-gray-artist text-xs">Gene Evaro Jr.</span>
-                    </div>
-                </div>
-                        <!-- etc. -->
-                <div class="w-36 h-52 bg-gray-home_tiles flex flex-col justify-around items-center">
-                    <div class="w-32 h-32">
-                        <img src="images/some-days.png" width="127px"/>
-                    </div>
-                    <div class="w-32 flex flex-col align-bottom">
-                        <h5>Some Days</h5>
-                        <span class="text-gray-artist text-xs">Ira Wolf</span>
-                    </div>
-                </div>
-
-                <div class="w-36 h-52 bg-gray-home_tiles flex flex-col justify-around items-center">
-                    <div class="w-32 h-32">
-                        <img src="images/chime.png" width="127px"/>
-                    </div>
-                    <div class="w-32 flex flex-col align-bottom">
-                        <h5>Chime</h5>
-                        <span class="text-gray-artist text-xs">Alan Gogoll</span>
-                    </div>
-                </div>
-
-                <div class="w-36 h-52 bg-gray-home_tiles flex flex-col justify-around items-center">
-                    <div class="w-32 h-32">
-                        <img src="images/runaway.png" width="127px" height="127px"/>
-                    </div>
-                    <div class="w-32 flex flex-col align-bottom">
-                        <h5>Runaway</h5>
-                        <span class="text-gray-artist text-xs">Beast Coast</span>
-                    </div>
-                </div>
-
-                <div class="w-36 h-52 bg-gray-home_tiles flex flex-col justify-around items-center">
-                    <div class="w-32 h-32">
-                        <img src="images/in-your-car.png" width="127px" height="127px"/>
-                    </div>
-                    <div class="w-32 flex flex-col align-bottom">
-                        <h5>In Your Car</h5>
-                        <span class="text-gray-artist text-xs">No Aloha</span>
-                    </div>
-                </div>
-
-
-            </div>
-
-        </div>
-
     </div>
 
     <!-- bottom control strip -->
     <div class="w-full h-20 bg-gray-control_bg border-t border-gray-border flex justify-between">
-
-        <div class="w-60 h-full flex justify-evenly items-center">      <!-- now playing / replace w50 class -->
-            <img src="images/wardell.png" width="45px"/>
-
+        <!-- now playing -->
+        <div class="w-60 h-full flex justify-evenly items-center">
+            <div class="w-12 h-12">
+                <img src="images/wardell.png" alt="album art"/>
+            </div>
             <div class="block">
-                <h6 class="text-sm text-white-basic">Domestic Sweater</h6>
+                <h6 class="w-32 text-sm text-white-basic">Domestic Sweater</h6>
                 <span class="text-xs text-gray-artist">Wardell</span>
             </div>
-
-            <i class="fa fa-heart-o text-gray-artist"></i>
-
+            <i class="fa fa-heart-o text-gray-artist -ml-3"></i>
         </div>
-
-        <div class="flex flex-col justify-center items-center">      <!-- center controls -->
+        <!-- center controls and time elapsed-->
+        <div class="flex flex-col justify-center items-center">
             <div class="w-48 flex justify-between items-center">
-                <div class="w-14 flex justify-between text-sm">
+                <div class="w-14 flex justify-between items-center text-sm">
                     <i class="fa fa-random text-gray-controls"></i>
-                    <i class="fa fa-step-backward text-gray-controls"></i>
+                    <i class="material-icons text-gray-controls">skip_previous</i>
                 </div>
                 <i class="material-icons text-white-basic" style="font-size: 36px">play_circle_filled</i>
-                <div class="w-14 flex justify-between text-sm">
-                    <i class="fa fa-step-forward text-gray-controls"></i>
+                <div class="w-14 flex justify-between items-center text-sm">
+                    <i class="material-icons text-gray-controls">skip_next</i>
                     <i class="fa fa-repeat text-gray-controls"></i>
                 </div>
             </div>
@@ -194,12 +205,12 @@
                 <span class="text-xs text-gray-controls">4:25</span>
             </div>
         </div>
-
-        <div class="w-52 ml-8 flex justify-evenly items-center text-gray-controls">      <!-- options and volume level -->
+        <!-- options and volume level -->
+        <div class="w-52 ml-8 flex justify-evenly items-center text-gray-controls">
             <div class="w-16 flex justify-between">
-                <i class="material-icons fsm" >playlist_play</i>  <!-- transform: rotate(90deg) ? -->
-                <i class="material-icons fsm">speaker</i>
-                <i class="material-icons fsm">volume_up</i>
+                <i class="material-icons" style="font-size: 20px">playlist_play</i>
+                <i class="material-icons" style="font-size: 16px">speaker</i>
+                <i class="material-icons" style="font-size: 18px">volume_up</i>
             </div>
             <div class="w-20 h-1  rounded-md bg-gray-time_vol">
                 <div class="w-10 h-1 rounded-md float-left bg-gray-elapsed"></div>

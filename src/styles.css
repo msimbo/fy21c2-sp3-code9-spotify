@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+
+* {
+    font-family: "spotify-circular", "Lato", sans-serif;
+}
+
+.w125 {
+    width: 500px;
+}
+
+h5 {
+    font-size: 14px;  /* or @apply text-sm */
+}
+
+.custom-shadow {
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.4);
+}
+
+.mix-panel {
+    @apply w-64 h-16 rounded-md bg-blue-panel1 flex
+}
+
+.album-panel {
+    @apply w-40 h-56 py-4 bg-gray-home_tiles rounded-md flex flex-col justify-between items-center
+}
+
+
+@tailwind utilities;

@@ -1,5 +1,7 @@
 module.exports = {
-  purge: [],
+  purge: [
+      'index.html'
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
@@ -33,6 +35,8 @@ module.exports = {
         panel1: '#2b3946',
         panel2: '#242a30',
         mix_title: '#f9fbfc',  // or white?
+        liked_a: '#2b1a96',
+        liked_b: '#778a85',
       },
       red: {
         top_upper: '#901b22',
@@ -46,6 +50,9 @@ module.exports = {
 
     },
     extend: {
+      gridTemplateColumns: {
+        '3': 'repeat(3, minmax(750px, 1fr))'
+      }
     },
   },
   variants: {

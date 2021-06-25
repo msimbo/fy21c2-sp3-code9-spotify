@@ -25,23 +25,23 @@ Our team...
 
 ### Tools:
 - PhpStorm IDE for production
-- Tailwind CSS framework
+- (HTML) and the Tailwind CSS framework
 - GitHub for collaboration / version control
 - Vercel for publishing the final product
 
 ### Results:
 
-Amelia completed the following pages:
+Amelia Bradley completed the following pages:
 
 - new_playlist.html
 - top nav section
 
-Casey took care of:
+Casey Geist took care of:
 
 - index.html (home screen)
 - bottom control section
 
-And Eleasah provided:
+And Eleasah Whittaker provided:
 
 - playlist2.html
 - sidebar menu

@@ -1,0 +1,125 @@
+
+.top-nav{
+    margin-left: 200px;
+    background-color: #142954;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.top-nav h3{
+    margin-right: 450px;
+    color: white;
+    background-color: #142954;
+}
+.girl{
+    border-radius: 50%;
+}
+.select {
+    margin-right: 30px;
+    margin-top: 9px;
+    color: white;
+    border-radius: 25px;
+    height: 40px;
+    text-align: right;
+    background-color: #161616;
+    border-color: #161616;
+    text-align-last: right;
+}
+.play-bg{
+    background-color: white;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+    margin-left: 45px;
+}
+.arrow{
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    background-color: #161616;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 0px;
+    margin-top: 14px;
+    font-weight: thin;
+}
+
+}
+.select{
+    display: inline-flex;
+    text-align: center;
+    background-color: #0E0E0E;
+    border-color: #0E0E0E;
+    text-align-last: right;
+}
+.select disabled-select{
+    text-align: right;
+
+}
+::placeholder {
+    color: white ;
+    text-align: left;
+}
+.img-box{
+    margin-top: 30px;
+}
+hr{
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 230px;
+    background-color:#272727 ;
+    border:none;
+    height: 2px;
+}
+body{
+    background-color:#161616;
+}
+.body-content{
+    margin-left: 250px;
+}
+.body-content h5{
+    color: white;
+}
+.body-content h6{
+    color: white;
+}
+.body-content p{
+    color: white;
+}
+.btn{
+    border-radius: 25px;
+    height: 30px;
+    width: 70px;
+    color: white;
+    border: solid 2px;
+    border-color: #272727;
+    background-color: #161616;
+    margin-left: 250px;
+}
+.secondary-text{
+    display: flex;
+/margin-left: 00px;
+    margin-top: 30px;
+}
+.secondary-text p{
+    margin-left: 300px;
+    color: rgb(165, 165, 165);
+}
+.container{
+    display: flex;
+    margin-left: 0px;
+}
+.text p{
+    color: rgb(165, 165, 165);
+    margin-left: 20px;
+}
+.text h6{
+    color: rgb(165, 165, 165);
+    margin-top: 20px;
+    margin-left: 20px;
+}

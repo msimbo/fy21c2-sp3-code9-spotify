@@ -1,8 +1,20 @@
 {
   "devDependencies": {
-    "live-server": "^1.2.1"
+    "autoprefixer": "^10.2.6",
+    "live-server": "^1.2.1",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.2"
   },
-  "scripts" : {
-    "serve" : "live-server ."
-  }
+  "scripts": {
+    "serve": "live-server ."
+  },
+  "dependencies": {},
+  "name": "fy21cy2-sp3-code9-spotify",
+  "version": "1.0.0",
+  "description": "replica of 3 Spotify pages",
+  "main": "index.html",
+  "repository": "https://github.com/msimbo/fy21cy2-sp3-code9-spotify.git",
+  "author": "ameliabrad+caseyg5+eleasahw",
+  "license": "none",
+  "private": false
 }

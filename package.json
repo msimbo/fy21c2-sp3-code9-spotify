@@ -3,15 +3,6 @@
     "live-server": "^1.2.1"
   },
   "scripts" : {
-    "dev": "live-server",
-    "serve" : "live-server .",
-    "build:css" : "tailwind build src/style.css -o dist/myplaylist#1.css"
-  }
-}
-// postcss.config.js
-module.exports = {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
+    "serve" : "live-server ."
   }
 }

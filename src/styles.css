@@ -21,8 +21,21 @@ h5 {
     @apply w-64 h-16 rounded-md bg-blue-panel1 flex
 }
 
+.mix-panel:hover {
+    cursor: pointer;
+}
+
 .album-panel {
     @apply w-40 h-56 py-4 bg-gray-home_tiles rounded-md flex flex-col justify-between items-center
+}
+
+.album:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+}
+
+i:hover {
+    cursor: pointer;
 }
 
 

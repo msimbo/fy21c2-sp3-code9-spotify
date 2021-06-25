@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
 </head>
 
 <body >
@@ -20,11 +20,57 @@
 
     <div class="w-full flex">
         <!-- side menu on left -->
-        <div class="w-1/5 bg-black-basic text-gray-see_more">
+
+        <div class="w-1/5  pt-10 pr-3 pl-5 bg-black-basic text-gray-see_more">
             <!-- side menu goes here -->
-            Sample text
-            <div class="w-5 h-5 bg-gradient-to-br from-blue-liked_a to-blue-liked_b"></div>
+            <div id="general" class="font-sans font-medium text-xs">
+                <!--general nav items-->
+
+                <div class="flex items-center py-2 hover:text-gray-400"> <!--make class: nav-hover-->
+                    <i class="material-icons">home</i>
+                    <a href="#" class="ml-3">Home</a>
+                </div>
+
+                <div class="flex items-center py-2 hover:text-gray-400">
+                    <i class="material-icons-outlined">search</i>
+                    <a href="#" class="ml-3">Search</a>
+                </div>
+
+                <div class="flex pt-2 pb-8 hover:text-gray-400">
+                    <i class="material-icons-outlined">library_music</i>
+                    <a href="#" class="ml-3">Your Library</a>
+                </div>
+            </div>
+
+            <div id="playlists" class="font-medium text-xs">
+                <!--playlist section-->
+                <!--@TODO put divs inside of a tag for hover effect-->
+
+                <h3 class="sm:uppercase pb-1">Playlists</h3>
+                <div class="flex items-center py-2 hover:text-gray-400">
+                    <i class="material-icons-outlined">library_add</i>
+                    <a href="#" class="ml-3">Create Playlist</a>
+                </div>
+
+                <div class="flex items-center py-2 hover:text-gray-400">
+                    <i class="material-icons-outlined">favorite_border</i>
+                    <a href="#" class="ml-3">Liked Songs</a>
+                </div>
+            </div>
+            <br>
+            <hr class="pb-4">
+
+            <div id="personal" class="flex-col font-semibold text-xs">
+                <!--list of personal playlists-->
+                <a href="#"><div class="py-1.5 hover:text-gray-400">2021 Greatest Songs</div></a>
+                <a href="#"><div class="py-1.5 hover:text-gray-400">At Work</div></a>
+                <a href="playlist.html"><div class="py-1.5 hover:text-gray-400">Playlist #2</div></a>
+                <a href="#"><div class="py-1.5 hover:text-gray-400">Playlist #4</div></a>
+                <a href="#"><div class="py-1.5 hover:text-gray-400">Rap Caviar</div></a>
+            </div>
         </div>
+<!--            <div class="w-5 h-5 bg-gradient-to-br from-blue-liked_a to-blue-liked_b"></div>-->
+
 
         <div class="w-4/5">
             
@@ -114,7 +160,7 @@
                 <div class="flex justify-between text-white-basic">
                     <!-- panel 1 -->
                     <div class="album-panel mr-1.5">
-                        <div class="w-32 h-32 hover:scale-110">
+                        <div class="album w-32 h-32">
                             <img src="images/be-happy.png" width="127px" alt="album art"/>
                         </div>
                         <div class="w-32 flex flex-col align-bottom">
@@ -124,7 +170,7 @@
                     </div>
                     <!-- etc. -->
                     <div class="album-panel mr-1.5">
-                        <div class="w-32 h-32">
+                        <div class="album w-32 h-32 ">
                             <img src="images/some-days.png" width="127px" alt="album art"/>
                         </div>
                         <div class="w-32 flex flex-col align-bottom">
@@ -134,7 +180,7 @@
                     </div>
 
                     <div class="album-panel mr-1.5">
-                        <div class="w-32 h-32">
+                        <div class="album w-32 h-32">
                             <img src="images/chime.png" width="127px" alt="album art"/>
                         </div>
                         <div class="w-32 flex flex-col align-bottom">
@@ -144,7 +190,7 @@
                     </div>
 
                     <div class="album-panel mr-1.5">
-                        <div class="w-32 h-32">
+                        <div class="album w-32 h-32">
                             <img src="images/runaway.png" width="127px" height="127px" alt="album art"/>
                         </div>
                         <div class="w-32 flex flex-col align-bottom">
@@ -154,7 +200,7 @@
                     </div>
 
                     <div class="album-panel">
-                        <div class="w-32 h-32">
+                        <div class="album w-32 h-32">
                             <img src="images/in-your-car.png" width="127px" height="127px" alt="album art"/>
                         </div>
                         <div class="w-32 flex flex-col align-bottom">
@@ -191,7 +237,10 @@
                     <i class="fa fa-random text-gray-controls"></i>
                     <i class="material-icons text-gray-controls">skip_previous</i>
                 </div>
-                <i class="material-icons text-white-basic" style="font-size: 36px">play_circle_filled</i>
+                <div id="play-pause" class="w-8 h-8 rounded-full bg-black-basic flex justify-center items-center">
+                    <i class="material-icons text-white-basic"
+                      style="font-size: 38px">play_circle_filled</i>
+                </div>
                 <div class="w-14 flex justify-between items-center text-sm">
                     <i class="material-icons text-gray-controls">skip_next</i>
                     <i class="fa fa-repeat text-gray-controls"></i>

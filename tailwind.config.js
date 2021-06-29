@@ -37,6 +37,7 @@ module.exports = {
         mix_title: '#f9fbfc',  // or white?
         liked_a: '#2b1a96',
         liked_b: '#778a85',
+        icon: '#175DEE',
       },
       red: {
         top_upper: '#901b22',
@@ -45,7 +46,7 @@ module.exports = {
         almost_black: '#0e0e0e',
       },
       green: {
-        play: '#42ae43'
+        play: '#42ae43',
       },
 
     },

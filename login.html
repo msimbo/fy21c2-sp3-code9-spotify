@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="src/tailwind.css">
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login - Spotify</title>
+</head>
+
+<body>
+    <!-- First Login Box -->
+    <div class="w125 h-96 py-10 rounded-lg bg-black-basic text-white-basic flex flex-col items-center">
+        <div class="mb-8 text-xl font-bold flex items-center">
+            <i class="fa fa-spotify" style="font-size: 42px"></i>
+            &nbsp;Spotify
+        </div>
+
+        <h2 class="text-3xl font-semibold text-center">Millions of songs.<br>
+        Free on Spotify.</h2>
+
+        <div id="login" class="w-2/3 h-12 rounded-full mt-12 mb-9 bg-green-play font-semibold tracking-widest flex justify-center items-center">LOG IN</div>
+
+        <div class="tracking-widest">
+            <span class="text-sm font-bold text-gray-see_more">Don't have an account? </span>
+            <a class="text-sm underline" href="https://www.spotify.com/us/signup/?forward_url=https%3A%2F%2Fopen.spotify.com%2F">SIGN UP</a>
+        </div>
+    </div>
+
+    <div class="h-10"></div>  <!-- spacer -->
+
+    <!-- Second Login Box -->
+    <div class="w125 h250 py-10 rounded-lg bg-black-basic text-white-basic flex flex-col items-center">
+        <div class="mb-10 text-xl font-bold flex items-center">
+            <i class="fa fa-spotify" style="font-size: 42px"></i>
+            &nbsp;Spotify
+        </div>
+        <h2 class="mb-2 text-3xl font-semibold text-center">Log in to continue.</h2>
+
+        <div class="">
+            <div class="w-80 h-10 my-4 px-2.5 rounded-md bg-gray-search_field text-gray-see_more flex justify-between items-center">
+                <input id="user" type="email" placeholder="Email or username"
+                       class="w-64 h-6 bg-transparent text-sm focus:outline-none">
+                <i class="material-icons text-white-basic">mail_outline</i>
+            </div>
+
+            <div class="w-80 h-10 mb-3 px-2.5 rounded-md bg-gray-search_field text-gray-see_more flex justify-between items-center">
+                <input id="pswd" type="password" placeholder="Password"
+                       class="w-64 h-6  bg-transparent text-sm focus:outline-none">
+                <i class="material-icons" style="color: white; font-size: 22px">visibility_off</i>
+            </div>
+
+            <div class="mb-6 text-sm text-gray-see_more underline"><a href="https://www.spotify.com/password-reset/">Reset password</a></div>
+            <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-see_more">Remember me</span>
+                <div class="w-11 h-6 rounded-full bg-green-play">
+                    <div class="w-6 h-6 rounded-full float-right bg-white-basic"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="login2" class="w-80 h-12 rounded-full mt-8 mb-6 bg-white-basic font-semibold tracking-widest text-black-basic flex justify-center items-center">LOG IN</div>
+
+        <div class="w-80 mb-6 text-gray-see_more flex justify-between items-center">
+            <span><hr style="width: 125px"></span>
+            <span>OR</span>
+            <span><hr style="width: 125px"></span>
+        </div>
+
+        <!-- https://acccounts.spotify.com/en/login/facebook?continue=https%3A%2F%2Fopen.spotify.com%2F -->
+        <div id="login-fb" class="w-80 h-12 rounded-full mb-3  border border-gray-see_more pl-3 font-semibold  text-white-basic flex justify-start items-center">
+            <div class="w-6 h-6 mr-8 bg-blue-new_blue rounded-full flex justify-center items-end">
+                <i class="fa fa-facebook"></i>
+            </div>
+            <span>Continue with Facebook</span>
+        </div>
+
+        <!-- https://acccounts.spotify.com/en/login/google?continue=https%3A%2F%2Fopen.spotify.com%2F -->
+        <div id="login-g" class="w-80 h-12 rounded-full mb-3  border border-gray-see_more pl-3 font-semibold  text-white-basic flex justify-start items-center">
+            <div class="w-6 h-6 mr-10"><img src="images/google_g_logo.svg" alt=""></div>
+            <span>Continue with Google</span>
+        </div>
+
+        <!-- https://appleid.apple.com/auth/authorize?client_id=com.spotify.accounts -->
+        <div id="login-a" class="w-80 h-12 rounded-full mb-8  border border-gray-see_more pl-3.5 font-semibold  text-white-basic flex justify-start items-center">
+            <i class="fa fa-apple mr-14" style="font-size: 24px"></i>
+            <span>Continue with Apple</span>
+        </div>
+
+        <div class="mb-12 tracking-widest font-bold">
+            <span class="text-sm  text-gray-see_more">Don't have an account? </span>
+            <a class="text-sm underline" href="https://www.spotify.com/us/signup/?forward_url=https%3A%2F%2Fopen.spotify.com%2F">SIGN UP</a>
+        </div>
+        <a class="text-xs text-gray-see_more" href="#">S E T T I N G S</a>
+    </div>
+
+
+</body>
+</html>

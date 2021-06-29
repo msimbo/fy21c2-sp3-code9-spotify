@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Spotify | Home</title>
-    <link rel="stylesheet" href="src/tailwind.css">
+    <link rel="stylesheet" href="tailwind.css">
     <link rel="stylesheet" href="src/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap">
@@ -53,7 +53,9 @@
                 </div>
 
                 <div class="flex items-center py-2 hover:text-gray-400">
-                    <i class="material-icons-outlined">favorite_border</i>
+                    <div class="w-6 h-6 bg-gradient-to-br from-blue-liked_a to-blue-liked_b flex justify-center items-center">
+                        <i class="material-icons" style="font-size: 14px;">favorite</i>
+                    </div>
                     <a href="#" class="ml-3">Liked Songs</a>
                 </div>
             </div>
@@ -64,14 +66,13 @@
                 <!--list of personal playlists-->
                 <a href="#"><div class="py-1.5 hover:text-gray-400">2021 Greatest Songs</div></a>
                 <a href="#"><div class="py-1.5 hover:text-gray-400">At Work</div></a>
-                <a href="playlist.html"><div class="py-1.5 hover:text-gray-400">Playlist #2</div></a>
+                <a href="playlist2.html"><div class="py-1.5 hover:text-gray-400">Playlist #2</div></a>
                 <a href="#"><div class="py-1.5 hover:text-gray-400">Playlist #4</div></a>
                 <a href="#"><div class="py-1.5 hover:text-gray-400">Rap Caviar</div></a>
             </div>
         </div>
-<!--            <div class="w-5 h-5 bg-gradient-to-br from-blue-liked_a to-blue-liked_b"></div>-->
 
-
+        <!-- main container -->
         <div class="w-4/5">
             
             <!-- upper portion of main container with nav -->
@@ -91,7 +92,7 @@
                     <div class="emily w-36 rounded-full pl-1 pr-2 bg-black-basic custom-shadow text-white-basic flex justify-between items-center">
                         <div class="flex items-center">
                             <img class="rounded-full" src="images/emily.png" alt="emily's avatar">
-                            <span class="ml-2 text-xs">Emily Adams</span>
+                            <a href="readme.md"><span class="ml-2 text-xs">Emily Adams</span></a>
                         </div>
                         <i class="fa fa-caret-down"></i>
                     </div>
@@ -160,7 +161,7 @@
                 <div class="flex justify-between text-white-basic">
                     <!-- panel 1 -->
                     <div class="album-panel mr-1.5">
-                        <div class="album w-32 h-32">
+                        <div class="w-32 h-32 album shadow-light">
                             <img src="images/be-happy.png" width="127px" alt="album art"/>
                         </div>
                         <div class="w-32 flex flex-col align-bottom">
@@ -170,7 +171,7 @@
                     </div>
                     <!-- etc. -->
                     <div class="album-panel mr-1.5">
-                        <div class="album w-32 h-32 ">
+                        <div class="w-32 h-32 album shadow-light">
                             <img src="images/some-days.png" width="127px" alt="album art"/>
                         </div>
                         <div class="w-32 flex flex-col align-bottom">
@@ -180,7 +181,7 @@
                     </div>
 
                     <div class="album-panel mr-1.5">
-                        <div class="album w-32 h-32">
+                        <div class="w-32 h-32 album shadow-light">
                             <img src="images/chime.png" width="127px" alt="album art"/>
                         </div>
                         <div class="w-32 flex flex-col align-bottom">
@@ -190,7 +191,7 @@
                     </div>
 
                     <div class="album-panel mr-1.5">
-                        <div class="album w-32 h-32">
+                        <div class="w-32 h-32 album shadow-light">
                             <img src="images/runaway.png" width="127px" height="127px" alt="album art"/>
                         </div>
                         <div class="w-32 flex flex-col align-bottom">
@@ -200,7 +201,7 @@
                     </div>
 
                     <div class="album-panel">
-                        <div class="album w-32 h-32">
+                        <div class="w-32 h-32 album shadow-light">
                             <img src="images/in-your-car.png" width="127px" height="127px" alt="album art"/>
                         </div>
                         <div class="w-32 flex flex-col align-bottom">
@@ -238,7 +239,7 @@
                     <i class="material-icons text-gray-controls">skip_previous</i>
                 </div>
                 <div id="play-pause" class="w-8 h-8 rounded-full bg-black-basic flex justify-center items-center">
-                    <i class="material-icons text-white-basic"
+                    <i id="pp-icon" class="material-icons text-white-basic"
                       style="font-size: 38px">play_circle_filled</i>
                 </div>
                 <div class="w-14 flex justify-between items-center text-sm">
@@ -268,5 +269,6 @@
         </div>
     </div>
 
+    <script src="src/toggle.js"></script>
 </body>
 </html>

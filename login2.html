@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="src/tailwind.css">
+  <link rel="stylesheet" href="src/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Login - Spotify</title>
+</head>
+
+<body>
+
+    <!-- Second Login Box -->
+    <div class="w128 h240 py-10 rounded-lg bg-black-basic text-white-basic flex flex-col items-center">
+      <div class="mb-10 text-xl font-bold flex items-center">
+        <i class="fa fa-spotify" style="font-size: 42px"></i>
+        &nbsp;Spotify
+      </div>
+      <h2 class="mb-2 text-3xl font-semibold text-center">Log in to continue.</h2>
+
+      <form id="login-form">
+          <div class="w-80 h-10 my-4 px-2.5 rounded-md bg-gray-search_field text-gray-see_more flex justify-between items-center">
+            <input id="user" type="text" placeholder="Email or username"
+                   class="w-64 h-6 bg-transparent text-sm focus:outline-none">
+            <i class="material-icons text-white-basic">mail_outline</i>
+          </div>
+
+          <div class="w-80 h-10 mb-3 px-2.5 rounded-md bg-gray-search_field text-gray-see_more flex justify-between items-center">
+            <input id="pswd" type="password" placeholder="Password"
+                   class="w-64 h-6  bg-transparent text-sm focus:outline-none">
+            <i class="material-icons" style="color: white; font-size: 22px">visibility_off</i>
+          </div>
+
+          <div class="mb-6 text-sm text-gray-see_more underline">
+            <a href="https://www.spotify.com/password-reset/">Reset password</a>
+          </div>
+
+          <div class="flex justify-between items-center">
+            <span class="text-sm text-gray-see_more">Remember me</span>
+            <div class="w-11 h-6 rounded-full bg-green-play">
+              <div class="w-6 h-6 rounded-full float-right bg-white-basic"></div>
+            </div>
+          </div>
+
+          <button type="submit" id="login2" class="w-80 h-12 rounded-full mt-8 mb-6 bg-white-basic
+                      font-semibold tracking-widest text-black-basic flex justify-center items-center focus:outline-none">LOG IN</button>
+      </form>
+
+
+      <div class="w-80 mb-6 text-gray-see_more flex justify-between items-center">
+        <span><hr style="width: 125px"></span>
+        <span>OR</span>
+        <span><hr style="width: 125px"></span>
+      </div>
+
+      <!--  -->
+      <a id="login-fb" class="w-80 h-12 rounded-full mb-3  border border-gray-see_more pl-3 font-semibold  text-white-basic flex justify-start items-center"
+          href="https://acccounts.spotify.com/en/login/facebook?continue=https%3A%2F%2Fopen.spotify.com%2F">
+          <div class="w-6 h-6 mr-8 bg-blue-new_blue rounded-full flex justify-center items-end">
+              <i class="fa fa-facebook"></i>
+          </div>
+          <span>Continue with Facebook</span>
+      </a>
+
+      <!--  -->
+      <a id="login-g" class="w-80 h-12 rounded-full mb-3  border border-gray-see_more pl-3 font-semibold  text-white-basic flex justify-start items-center"
+          href="https://acccounts.spotify.com/en/login/google?continue=https%3A%2F%2Fopen.spotify.com%2F">
+          <div class="w-6 h-6 mr-10">
+            <img src="images/google_g_logo.svg" alt="multicolored google G">
+          </div>
+          <span>Continue with Google</span>
+      </a>
+
+      <!--  -->
+      <a id="login-a" class="w-80 h-12 rounded-full mb-8  border border-gray-see_more pl-3.5 font-semibold  text-white-basic flex justify-start items-center"
+          href="https://appleid.apple.com/auth/authorize?client_id=com.spotify.accounts">
+          <i class="fa fa-apple mr-14" style="font-size: 24px"></i>
+          <span>Continue with Apple</span>
+      </a>
+
+      <div class="mb-12 tracking-widest font-bold">
+        <span class="text-sm  text-gray-see_more">Don't have an account? </span>
+        <a class="text-sm underline" href="https://www.spotify.com/us/signup/?forward_url=https%3A%2F%2Fopen.spotify.com%2F">SIGN UP</a>
+      </div>
+      <a class="text-xs text-gray-see_more" href="#">S E T T I N G S</a>
+
+
+      <!-- conditionally visible -->
+      <div id="criteria" class="w-72 h-32 absolute left-28  rounded-lg p-4  bg-blue-mix_title text-blue-dark_teal text-sm text-center
+             opacity-0 transition-opacity duration-1000 delay-500">
+        Username must be at least 7 characters;
+        password must be at least 9 and contain a digit.<br><br>
+        Please try again.
+      </div>
+    </div>
+
+
+    <script src="src/login.js"></script>
+    <!-- @TODO: shorten height of 2nd login box -->
+</body>
+</html>

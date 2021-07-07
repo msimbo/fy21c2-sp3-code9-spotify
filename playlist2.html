@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles-from-tailwind.css">
+    <link rel="stylesheet" href="src/tailwind-full.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -14,7 +14,7 @@
 <body>
     <!--left navigation-->
     <div id="all" class="flex cursor-default">
-        <div id="left-main" class="bg-black h-screen w-1/5 pl-5 pt-10 pr-3 text-gray-500">
+        <div id="left-main" class="bg-black-basic h-screen w-1/5 pl-5 pt-10 pr-3 text-gray-controls">
             <div id="general" class="font-sans font-medium text-sm">
             <!--general nav items-->
 
@@ -40,17 +40,21 @@
 
                 <h3 class="sm:uppercase pb-1">Playlists</h3>
                 <div class="flex items-center py-2 hover:text-gray-400">
-                    <i class="material-icons-outlined">library_add</i>
+                    <div class="w-6 h-6 bg-gray-elapsed text-black-basic flex justify-center items-center">
+                        <i class="fa fa-plus" style="font-size: 14px;"></i>
+                    </div>
                     <a href="#" class="ml-3">Create Playlist</a>
                 </div>
 
                 <div class="flex items-center py-2 hover:text-gray-400">
-                    <i class="material-icons-outlined">favorite_border</i>
+                    <div class="w-6 h-6 bg-gradient-to-br from-blue-liked_a to-blue-liked_b flex justify-center items-center">
+                        <i class="material-icons" style="font-size: 14px;">favorite</i>
+                    </div>
                     <a href="#" class="ml-3">Liked Songs</a>
                 </div>
             </div>
 
-            <p class="text-gray-800 font-thin pb-2">________________________________</p>
+            <p class="text-gray-800 font-thin pb-2">____________</p>
 
             <div id="personal" class="flex-col font-semibold text-sm">
                 <!--list of personal playlists-->
@@ -64,8 +68,8 @@
 
         <!--hero-->
 
-        <div id="hero" class="flex-col h-screen w-4/5 bg-gradient-to-b from-red-500 to-black text-gray-50">
-            <div id="top" class="flex pt-16 pl-8 h-1/2 bg-black bg-opacity-20">
+        <div id="hero" class="flex-col h-screen w-4/5 bg-gradient-to-b from-red-top_upper to-red-almost_black text-gray-see_more">
+            <div id="top" class="flex pt-16 pl-8 h-1/2">
                 <!--top heading-->
                 <div id="album-cover">
                     <img src="https://m.media-amazon.com/images/I/61Y6kHRkq+L._SS500_.jpg" alt="wardell domestic sweater album cover" class="h-56">
@@ -81,14 +85,14 @@
                 </div>
             </div>
 
-            <div id="bottom" class="h-1/2 bg-black bg-opacity-40 px-8 pt-10 items-center text-gray-400">
+            <div id="bottom" class="h-1/2 bg-black-basic bg-opacity-40 px-8 pt-10 items-center text-gray-400">
                 <div id="nav-bar" class="flex">
                     <!--nav bar w/ icons-->
                     <div id="left" class="mr-80 flex">
                         <!--play icon-->
-                        <span class="pr-8 text-green-500 cursor-pointer hover:text-green-400"><i class="material-icons">play_circle_filled</i></span>
+                        <span class="pr-8 text-green-500 cursor-pointer"><i class="material-icons text-green-play">play_circle_filled</i></span>
                         <!--download icon-->
-                        <span class="pr-8 cursor-pointer hover:text-gray-50"><i class="material-icons">download_for_offline</i></span>
+                        <span class="pr-8 cursor-pointer hover:text-gray-50"><i class="material-icons text-green-play">download_for_offline</i></span>
                         <!--... icon-->
                         <span class="cursor-pointer hover:text-gray-50"><i class="material-icons">more_horiz</i></span>
                     </div>

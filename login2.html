@@ -12,17 +12,17 @@
   <title>Login - Spotify</title>
 </head>
 
-<body>
+<body class="bg-gray-behind_login">
 
     <!-- Second Login Box -->
-    <div class="w128 h240 py-10 rounded-lg bg-black-basic text-white-basic flex flex-col items-center">
+    <div class="w128 h212 m-auto py-10 rounded-lg bg-black-basic text-white-basic flex flex-col items-center">
       <div class="mb-10 text-xl font-bold flex items-center">
         <i class="fa fa-spotify" style="font-size: 42px"></i>
         &nbsp;Spotify
       </div>
       <h2 class="mb-2 text-3xl font-semibold text-center">Log in to continue.</h2>
 
-      <form id="login-form">
+      <form id="login-form" autocomplete="off">
           <div class="w-80 h-10 my-4 px-2.5 rounded-md bg-gray-search_field text-gray-see_more flex justify-between items-center">
             <input id="user" type="text" placeholder="Email or username"
                    class="w-64 h-6 bg-transparent text-sm focus:outline-none">
@@ -60,7 +60,7 @@
       <!--  -->
       <a id="login-fb" class="w-80 h-12 rounded-full mb-3  border border-gray-see_more pl-3 font-semibold  text-white-basic flex justify-start items-center"
           href="https://acccounts.spotify.com/en/login/facebook?continue=https%3A%2F%2Fopen.spotify.com%2F">
-          <div class="w-6 h-6 mr-8 bg-blue-new_blue rounded-full flex justify-center items-end">
+          <div class="w-6 h-6 mr-8 bg-blue-fb_icon rounded-full flex justify-center items-end">
               <i class="fa fa-facebook"></i>
           </div>
           <span>Continue with Facebook</span>
@@ -88,16 +88,19 @@
       </div>
       <a class="text-xs text-gray-see_more" href="#">S E T T I N G S</a>
 
-
       <!-- conditionally visible -->
-      <div id="criteria" class="w-72 h-32 absolute left-28  rounded-lg p-4  bg-blue-mix_title text-blue-dark_teal text-sm text-center
-             opacity-0 transition-opacity duration-1000 delay-500">
-        Username must be at least 7 characters;
-        password must be at least 9 and contain a digit.<br><br>
-        Please try again.
+      <div id="criteria" class="w-72 h-32 absolute top-10  rounded-lg p-4  bg-white-basic text-red-top_upper text-sm text-center
+             transition-opacity delay-500 duration-1000 opacity-0">
+          Username must be at least <strong>7</strong> characters;
+          password must be at least <strong>9</strong> and contain a <strong>digit</strong>.<br><br>
+        Please try again to login in.
       </div>
     </div>
 
+    <div id="signup-login" class="w-full h-16 opacity-95 bg-gradient-to-r from-pink-sign_up to-blue-sign_up px-10 flex justify-between items-center">
+        <div class=" text-white-basic">Sign up now for free. &nbsp;Already a member? &nbsp;Log in.</div>
+        <button id="yes" class="w-24 h-8  bg-white-basic rounded-full text-lg font-bold text-blue-sign_up_btn focus:outline-none">Yes</button>
+    </div>
 
     <script src="src/login.js"></script>
     <!-- @TODO: shorten height of 2nd login box -->

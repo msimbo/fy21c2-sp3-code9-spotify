@@ -5,8 +5,12 @@
     font-family: "spotify-circular", "Lato", sans-serif;
 }
 
-.w125 {
-    width: 500px;
+.w128 {
+    width: 512px;
+}
+
+.h212 {
+    height: 848px;
 }
 
 h5 {
@@ -15,6 +19,15 @@ h5 {
 
 .custom-shadow {
     box-shadow: 0 3px 2px rgba(0, 0, 0, 0.4);
+}
+
+.shadow-light {
+    box-shadow: 0 0 7px hsl(0, 0%, 15%);
+}
+
+.shadow-lighter {
+    box-shadow: 0px 0px 20px hsl(0, 0%, 40%);
+
 }
 
 .mix-panel {
@@ -32,11 +45,35 @@ h5 {
 .album:hover {
     cursor: pointer;
     transform: scale(1.08);
+    box-shadow: none;
 }
 
-i:hover {
+a {
+    text-decoration: none;
+}
+
+#emily:hover,
+#controls i:hover {
     cursor: pointer;
 }
 
+#menu li {
+    @apply h-8 pt-1.5 border-b border-gray-time_vol text-center
+}
+#menu li:last-of-type {
+    border: none;
+}
+#menu li:hover {
+    @apply bg-blue-dark_teal
+}
+
+/* Login styles */
+#login:hover {
+    cursor: pointer;
+}
+
+#login2:hover {
+    @apply bg-gray-search_field text-white-basic
+}
 
 @tailwind utilities;

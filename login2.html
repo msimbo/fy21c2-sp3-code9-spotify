@@ -32,7 +32,9 @@
           <div class="w-80 h-10 mb-3 px-2.5 rounded-md bg-gray-search_field text-gray-see_more flex justify-between items-center">
             <input id="pswd" type="password" placeholder="Password"
                    class="w-64 h-6  bg-transparent text-sm focus:outline-none">
-            <i class="material-icons" style="color: white; font-size: 22px">visibility_off</i>
+             <div id="eye-div">
+                 <i id="eye" class="material-icons text-white-basic" style="font-size: 22px">visibility_off</i>
+             </div>
           </div>
 
           <div class="mb-6 text-sm text-gray-see_more underline">
@@ -89,10 +91,10 @@
       <a class="text-xs text-gray-see_more" href="#">S E T T I N G S</a>
 
       <!-- conditionally visible -->
-      <div id="criteria" class="w-72 h-32 absolute rounded-lg p-4  bg-white-basic text-red-bright text-sm text-center
+      <div id="criteria" class="w-72 h-32 absolute rounded-lg p-4 bg-yellow-gold text-black-basic text-md text-center
              transition-opacity delay-500 duration-1000 opacity-0">
           Username must be at least <strong>7</strong> characters;
-          password must be at least <strong>9</strong> and contain a <strong>digit</strong>.<br><br>
+          password must be at least <strong>9</strong> and contain a <strong>digit</strong>.<br>
         Please try again to login in.
       </div>
     </div>
